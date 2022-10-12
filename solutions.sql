@@ -34,6 +34,16 @@
 -- ### Joins
 
 -- 6. Find all books about Computers and list ONLY the book titles
+
+    -- SELECT title
+    -- FROM books
+    -- INNER JOIN subjects
+    -- ON books.subject_id = subjects.id
+
+    -- WHERE subjects.subject LIKE '%Computer%';
+
+    --result: "Programming Python", "Learning Python", "Perl Cookbook", "Practical PostgreSQL"
+    
 -- 7. Find all books and display a result table with ONLY the following columns
 -- 	* Book title
 -- 	* Author's first name
