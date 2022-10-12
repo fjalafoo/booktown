@@ -7,7 +7,10 @@
     --result: (all subjects starting from Art ending with Science Fiction)
 
 -- 2. Find all subjects sorted by location
- 
+    -- SELECT subject 
+    -- FROM subjects
+    -- ORDER BY location;
+    --result: all subjects starting from History ending with Religon
 
 -- ### Where
 -- 3. Find the book "Little Women"
