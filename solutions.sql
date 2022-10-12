@@ -1,6 +1,13 @@
 -- ### Order
 -- 1. Find all subjects sorted by subject
+
+    -- SELECT subject 
+    -- FROM subjects
+    -- ORDER BY subject;
+    --result: (all subjects starting from Art ending with Science Fiction)
+
 -- 2. Find all subjects sorted by location
+ 
 
 -- ### Where
 -- 3. Find the book "Little Women"
