@@ -61,11 +61,19 @@
 -- 8. Find all books that are listed in the stock table
 -- 	* Sort them by retail price (most expensive first)
 -- 	* Display ONLY: title and price
+    -- SELECT books.title, stock.cost
+    -- FROM editions
+    -- INNER JOIN stock ON editions.isbn=stock.isbn
+    -- INNER JOIN books ON editions.book_id = books.id;
+
+    --result: starting 1 "The Cat in the Hat"	30.00, ending "Dynamic Anatomy"	26.00
+
 -- 9. Find the book "Dune" and display ONLY the following columns
 -- 	* Book title
 -- 	* ISBN number
 -- 	* Publisher name
 -- 	* Retail price
+
 -- 10. Find all shipments sorted by ship date display a result table with ONLY the following columns:
 -- 	* Customer first name
 -- 	* Customer last name
