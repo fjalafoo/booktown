@@ -43,12 +43,21 @@
     -- WHERE subjects.subject LIKE '%Computer%';
 
     --result: "Programming Python", "Learning Python", "Perl Cookbook", "Practical PostgreSQL"
-    
+
 -- 7. Find all books and display a result table with ONLY the following columns
 -- 	* Book title
 -- 	* Author's first name
 -- 	* Author's last name
 -- 	* Book subject
+    -- SELECT books.title, subjects.subject, authors.first_name, authors.last_name
+    -- FROM books
+    -- INNER JOIN subjects
+    -- ON subjects.id = books.subject_id
+    -- INNER JOIN authors
+    -- ON authors.id = books.author_id;
+
+    --result: starting with "Practical PostgreSQL"	"Computers"	"John"	"Worsley", ending with: 15 "Bartholomew and the Oobleck"	"Children's Books"	"Theodor Seuss"	"Geisel"
+
 -- 8. Find all books that are listed in the stock table
 -- 	* Sort them by retail price (most expensive first)
 -- 	* Display ONLY: title and price
