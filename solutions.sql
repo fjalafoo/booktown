@@ -74,11 +74,26 @@
 -- 	* Publisher name
 -- 	* Retail price
 
+    -- SELECT books.title, editions.isbn, publishers.name, stock.cost
+    -- FROM editions
+    -- INNER JOIN stock ON editions.isbn=stock.isbn
+    -- INNER JOIN books ON editions.book_id = books.id
+    -- INNER JOIN publishers ON editions.publisher_id = publishers.id;
+    -- result: starting with "The Cat in the Hat"	"039480001X"	"Random House"	30.00 ending with "Dynamic Anatomy"	"0823015505"	"Watson-Guptill Publications"	26.00
+
 -- 10. Find all shipments sorted by ship date display a result table with ONLY the following columns:
 -- 	* Customer first name
 -- 	* Customer last name
 -- 	* ship date
 -- 	* book title
+
+    -- SELECT customers.first_name, customers.last_name, shipments.ship_date, books.title
+    -- FROM shipments
+    -- INNER JOIN customers ON customers.id=shipments.customer_id
+    -- INNER JOIN editions ON editions.isbn = shipments.isbn
+    -- INNER JOIN books ON books.id=editions.book_id
+    --result: starting with "Annie"	"Jackson"	"2001-09-15 03:42:22+03"	"The Cat in the Hat", ending with "Tim"	"Owens"	"2001-08-14 17:33:47+03"	"Dynamic Anatomy"
+
 
 -- ### Grouping and Counting
 
